@@ -1,0 +1,170 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    line-height: 1.75rem;
+    color: #333333;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    display: block;
+    background-color: #ffffff;
+}
+
+header{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 img{
+    display: block;
+    width: 180px;
+    height: auto;
+    margin-right: auto;
+}
+
+#mainvisual{
+    max-width: 1000px;
+    margin: 1rem auto 0;
+}
+
+#index{
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 1rem auto 0;
+}
+
+#index .contents{
+    width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ededed;
+}
+
+#index h2{
+    margin: 0 auto;
+}
+
+#index h2 ,
+#index ol{
+    padding: 1rem;
+    text-align: center;
+}
+
+#index ol{
+    border: 1px solid #333333;
+    list-style-position: inside;
+}
+
+.imges-list{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.imges-list li{
+    width: 50%;
+}
+
+.imges-list img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#detail{
+    max-width: 1000px;
+    background-color: #ededed;
+    margin: 2rem auto 0;
+    display: flex;
+}
+
+#detail h2{
+    margin: 1rem auto 0;
+    width: 800px;
+    text-align: center;
+}
+
+#detail .contents{
+   width: 800px;
+   margin: 0 auto;
+}
+
+#detail dl{
+    flex-wrap: wrap;
+}
+
+#detail dl > div{
+    margin-bottom: 1rem;
+}
+
+#detail dl,
+#detail .text{
+    display: inline-table;
+    justify-content: left;
+}
+
+#detail .contents dl {
+  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  border-right: 1px solid #ccc;
+}
+
+a.link {
+  color: #000;
+}
+
+footer {
+    width: 800px;
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+
+/*レスポンシブデザイン*/
+
+@media screen and (max-width: 1024px) {
+  
+.imges-list {
+    flex-direction: column;
+  }
+
+.imges-list li {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#detail {
+    display: block;
+}
+
+#detail dl,
+#detail .text {
+    display: block;
+    width: 100%;
+  }
+
+#detail .contents dl {
+    padding-right: 0;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+ #detail h2 {
+    width: 100%;
+  }
+}
